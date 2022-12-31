@@ -1,16 +1,16 @@
 <html>
     <head>
-        <title>Scavenger Hunt 2022-2023 - 1</title>
+        <title>Scavenger Hunt 2022-2023 - 8</title>
         <script>
             function checkAnswer() {
                 event.preventDefault();
-                let answer = "tether1984"; //Page One 
+                let answer = "kalp"; //Eight 
 
                 input = document.getElementById("answer").value;
 
                 if (input.trim().toLowerCase() === answer) {
                     alert("Correct.");
-                    window.location = "level2.html";
+                    window.location = "level9.html";
                 } else {
                     alert("Incorrect.");
                 }
@@ -18,7 +18,7 @@
         </script>
     </head>
     <body style="background-color: rgb(2, 103, 205);">
-        <h2 style="margin: 0; text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Password?</h2>
+        <h2 style="margin: 0; text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Morse who?</h2>
         <form onsubmit="checkAnswer()" style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <input type="text" id="answer" name="answer"><br><br>
         </form>
