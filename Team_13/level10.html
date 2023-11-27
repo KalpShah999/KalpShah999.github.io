@@ -4,19 +4,25 @@
         <script>
             function checkAnswer() {
                 event.preventDefault();
+                let answer = "santa"; 
 
                 input = document.getElementById("answer").value;
 
-                window.location = "./Team_" + input + "/level1.html";
+                if (input.trim().toLowerCase() === answer) {
+                    alert("Correct.");
+                    window.location = "./level11.html";
+                } else {
+                    alert("Incorrect.");
+                }
             }
         </script>
     </head>
     <body style="background-color: rgb(2, 103, 205);">
         <h2 style="margin: 0; text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
-            What team are you on? 
+            2 x (9 x 5 / 3 - 7) x 8 
         </h2>
         <form onsubmit="checkAnswer()" style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <input type="text" id="answer" name="answer"><br><br>
         </form>
     </body>
-</html>
+</html

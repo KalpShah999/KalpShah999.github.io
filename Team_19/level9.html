@@ -4,19 +4,25 @@
         <script>
             function checkAnswer() {
                 event.preventDefault();
+                let answer = "fireplace"; 
 
                 input = document.getElementById("answer").value;
 
-                window.location = "./Team_" + input + "/level1.html";
+                if (input.trim().toLowerCase() === answer) {
+                    alert("Correct.");
+                    window.location = "./level10.html";
+                } else {
+                    alert("Incorrect.");
+                }
             }
         </script>
     </head>
     <body style="background-color: rgb(2, 103, 205);">
         <h2 style="margin: 0; text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
-            What team are you on? 
+            gSa loves hosTing events thAt brIng the chRistmas Warmth, happinEss, and joy to aLL 
         </h2>
         <form onsubmit="checkAnswer()" style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <input type="text" id="answer" name="answer"><br><br>
         </form>
     </body>
-</html>
+</html
