@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scavenger Hunt 2024-2025 - 9</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color: rgb(128, 240, 178);">
+        <div class="container">
+            <h1>Level 5</h1>
+            <p>Underline the Jigsaw Puzzle!</p>
+            <input type="text" id="passwordInput" placeholder="Enter password">
+            <br>
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+
+        <script>
+            const correctPassword = "wet"; // CHANGE THIS 
+
+            function checkPassword() {
+                event.preventDefault();
+                const userInput = document.getElementById("passwordInput").value.replaceAll(" ", "").trim().toLowerCase();
+                if (userInput === correctPassword) {
+                    alert("Correct!");
+                    window.location.href = "level10-GHJ.html"; // CHANGE THIS
+                } else {
+                    alert("Incorrect password. Try again.");
+                    document.getElementById("passwordInput").value = "";
+                }
+            }
+        </script>
+    </body>
+</html>

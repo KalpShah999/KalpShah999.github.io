@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scavenger Hunt 2024-2025</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color: rgb(132, 137, 151);">
+        <div class="container">
+            <h1>2024 - 2025</h1>
+            <p>Welcome to this year's scavenger hunt!</p>
+            <button style="margin-top: 0.5em;" onclick="checkPassword()">Start</button>
+        </div>
+
+        <script>
+            const correctPassword = "password"; // CHANGE THIS 
+
+            function checkPassword() {
+                event.preventDefault();
+                window.location.href = "level1-IUV.html"; // CHANGE THIS
+            }
+        </script>
+    </body>
+</html>
